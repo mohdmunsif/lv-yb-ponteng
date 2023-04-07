@@ -33,9 +33,7 @@ class ParliamentSessionDayController extends Controller
      */
     public function index()
     {
-
         $now = Carbon::now();
-
         return redirect(route('parliamentdays.ym', [$now->year, $now->month]));
     }
 
@@ -85,7 +83,6 @@ class ParliamentSessionDayController extends Controller
 
         //        generate the period of that month
         $period = CarbonPeriod::create($year . '-' . $month . '-' . '01', $year . '-' . $month . '-' . $columnNum);
-
 
         $dateStart = Carbon::create($year . '-' . $month . '-' . '01');
         $dateEnd = Carbon::create($year . '-' . $month . '-' . $columnNum);

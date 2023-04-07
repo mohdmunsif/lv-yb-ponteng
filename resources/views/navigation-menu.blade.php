@@ -38,16 +38,16 @@
                                     <div class="block px-4 py-2 text-xs text-gray-400">
                                         {{ __('Manage:') }}
                                     </div>
-                                    <x-dropdown-link href="{{ route('parliamentdays') }}">
+                                    <x-dropdown-link href="{{ route('parliamentdays.index') }}">
                                         {{ __('Groups') }}
                                     </x-dropdown-link>
                                     <x-dropdown-link href="{{ route('parliamentdays.index') }}">
                                         {{ __('Parliament Session Days') }}
                                     </x-dropdown-link>
-                                    <x-dropdown-link href="{{ route('parliamentdays') }}">
-                                        {{ __('Member-Group-old') }}
+                                    <x-dropdown-link href="{{ route('parliamentdayslw.index') }}">
+                                        {{ __('Parliament Days Livewire') }}
                                     </x-dropdown-link>
-                                    <x-dropdown-link href="{{ route('parliamentdays') }}">
+                                    <x-dropdown-link href="{{ route('parliamentdays.index') }}">
                                         {{ __('Member-Group') }}
                                     </x-dropdown-link>
                                     <div class="border-t border-gray-100"></div>
